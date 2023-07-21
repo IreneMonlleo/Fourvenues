@@ -5,13 +5,14 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'blue': '#0081f0',
+      'basic-blue': '#0081f0',
       'dark-blue': '#31394c',
       'light-grey': '#fafafa',
-      'grey': '#d7d7d7',
+      'gray': '#d7d7d7',
       'text-grey':'#777777',
       'grey-blue': '#697082',
       'purple': '#9d57b7',
+      'white': '#ffffff'
     },
     extend: {},
   },
