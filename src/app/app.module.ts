@@ -8,6 +8,7 @@ import { UserAvatarComponent } from './user-avatar/user-avatar.component';
 import { ButtonComponent } from './button/button.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { ProgresBarComponent } from './progres-bar/progres-bar.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProgresBarComponent } from './progres-bar/progres-bar.component';
     UserAvatarComponent,
     ButtonComponent,
     DataTableComponent,
-    ProgresBarComponent
+    ProgresBarComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
