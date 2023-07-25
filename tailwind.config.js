@@ -12,7 +12,9 @@ module.exports = {
       'text-grey':'#777777',
       'grey-blue': '#697082',
       'purple': '#9d57b7',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      'green': '#77b697',
+      'red': '#b4504c'
     },
     extend: {},
   },

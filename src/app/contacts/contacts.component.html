@@ -1,0 +1,14 @@
+<section class="hidden lg:block  pb-4">
+    <h4 class="text-text-grey mt-7">Contacts</h4>
+    <ul>
+        <li *ngFor="let contact of contactList" class="pt-3">
+            <app-avatar
+                [notification]="true"
+                [name]="contact.name.first"
+                [image]="contact.picture.thumbnail"
+            ></app-avatar>
+        </li>
+    </ul>
+</section>
+
+

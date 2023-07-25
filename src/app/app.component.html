@@ -1,11 +1,27 @@
 <div class="flex">
     <nav-bar></nav-bar>
-    <section></section>
     <section>
-
+        <nav-interface></nav-interface>
+    </section>
+    <section class="w-full">
+        <nav-header class="flex h-16 items-center border-b-2 border-gray"></nav-header>
+        <div class="flex bg-light-grey w-full">
+            <div class="flex">
+                <svg  class="fill-text-grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard</title><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
+                <p class="text-text-grey">{{ title }}</p>
+            </div>
+            <buttonBorder [label]="'24 Mar - 23 Apr2019'"></buttonBorder>
+            <buttonBorder [label]="'Add Widget'"></buttonBorder>
+        </div>
+        <div class="md:flex">
+            <card-numbers
+                *ngFor="let card of list"
+                [category]="card.category"
+                [numberCategory]="card.numberCategory"
+                [number]="card.number"
+            ></card-numbers>
+        </div>
+        <div></div>
+        
     </section>
 </div>
-<h1>Esta es mi prueba de Fourvenure</h1>
-<avatar></avatar>
-<user-avatar></user-avatar>
-<buttonBorder [label]="'Add Widget'"></buttonBorder>
