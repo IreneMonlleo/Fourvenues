@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { timer } from 'rxjs';
+
 
 @Component({
   selector: 'contacts',
@@ -14,20 +14,22 @@ export class ContactsComponent implements OnInit {
   
   
   ngOnInit(): void {
-    
+    this.updateUsers();
 
     setInterval(() => {
-      this.httpClient.get('https://randomuser.me/api?results=10')
-      .subscribe((response: any) => {
-        this.contactList = response.results;
-      });
-  
+      this.updateUsers();
     }, 10000);
   }
 
- 
+  execute() {
+    this.updateUsers();
+  }
 
- 
-   
+  private updateUsers() {
+    this.httpClient.get('https://randomuser.me/api?results=8')
+      .subscribe((response: any) => {
+        this.contactList = response.results;
+      });
+  }
   
 }

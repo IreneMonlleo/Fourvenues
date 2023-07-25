@@ -1,6 +1,13 @@
 <!--Avatar with name and surname----->
 <div class="flex items-center space-x-4">
-    <app-avatar></app-avatar>
-    <svg class="w-5 items-center fill-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+    <div *ngFor="let userAvatar of userAvatarList">
+        <app-avatar
+            (click)="execute()"
+            [name]="userAvatar.name.first"
+            [lastName]="userAvatar.name.last"
+            [image]="userAvatar.picture.thumbnail"
+        ></app-avatar>
+    </div>
+    <svg class="w-5 items-center fill-text-grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
 </div>
 
