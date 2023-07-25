@@ -14,11 +14,20 @@ export class ContactsComponent implements OnInit {
   
   
   ngOnInit(): void {
-   
-    this.httpClient.get('https://randomuser.me/api?results=10')
+    
+
+    setInterval(() => {
+      this.httpClient.get('https://randomuser.me/api?results=10')
       .subscribe((response: any) => {
         this.contactList = response.results;
       });
+  
+    }, 10000);
   }
+
+ 
+
+ 
+   
   
 }
