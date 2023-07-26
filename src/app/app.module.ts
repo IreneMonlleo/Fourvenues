@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,6 +16,8 @@ import { MenuDashboardComponent } from './menu-dashboard/menu-dashboard.componen
 import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { CardNumbersComponent } from './card-numbers/card-numbers.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgChartsModule, NgChartsConfiguration } from 'ng2-charts';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,14 +31,19 @@ import { HttpClientModule } from '@angular/common/http';
     ContactsComponent,
     MenuDashboardComponent,
     NavHeaderComponent,
-    CardNumbersComponent
+    BarChartComponent,
+    CardNumbersComponent,
+        
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    NgChartsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: NgChartsConfiguration, useValue: { generateColors: false }}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

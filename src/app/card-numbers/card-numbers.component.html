@@ -1,17 +1,17 @@
-<div class=" bg-white w-20 h-20">
-    <p class="text-text-grey">{{category}}</p>
-    <p class="text-text-grey">{{numberCategory}}</p>
+<div class="flex flex-col items-center justify-center bg-white mr-5 mt-5">
+    <p class="text-text-grey text-sm">{{category}}</p>
+    <p class="text-text-grey text-3xl font-semibold my-4">{{numberCategory}}</p>
 
-    <div class="flex flex-row-reverse">
-        <p class="text-text-grey">{{number}}%</p>
+    <div class="flex">
         <!-- Positive number put this icon with this color  -->
-        <div *ngIf="number >= -1">
-            <svg class="fill-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+        <div *ngIf="number <= -1">
+            <svg class="w-5 fill-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
         </div>
         <!-- Positive number put this icon with this color  -->
-        <div *ngIf="number>=0">
-            <svg class="fill-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-up</title><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg>
+        <div *ngIf="number >= 1">
+            <svg class="w-5 fill-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-up</title><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg>
         </div>
+        <p class="text-text-grey ml-2 text-xs">{{number}}%</p>
     </div>
     
 </div>
