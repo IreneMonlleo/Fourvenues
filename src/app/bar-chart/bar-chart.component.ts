@@ -18,8 +18,7 @@ export class BarChartComponent {
     scales: {
       x: {},
       y: {
-        min: 4,
-        max: 750,
+        max: 400,
       },
     },
     plugins: {

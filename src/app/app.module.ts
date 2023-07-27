@@ -19,6 +19,7 @@ import { CardNumbersComponent } from './card-numbers/card-numbers.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgChartsModule, NgChartsConfiguration } from 'ng2-charts';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { BtnTimeComponent } from './btn-time/btn-time.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     NavHeaderComponent,
     BarChartComponent,
     CardNumbersComponent,
+    BtnTimeComponent,
         
   ],
   imports: [
