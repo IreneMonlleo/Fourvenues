@@ -8,6 +8,7 @@ import { AvatarComponent } from './avatar/avatar.component';
 import { UserAvatarComponent } from './user-avatar/user-avatar.component';
 import { ButtonComponent } from './button/button.component';
 import { DataTableComponent } from './data-table/data-table.component';
+import { CitiesTableComponent } from './cities-table/cities-table.component';
 import { ProgresBarComponent } from './progres-bar/progres-bar.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavInterfaceComponent } from './nav-interface/nav-interface.component';
@@ -25,6 +26,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     UserAvatarComponent,
     ButtonComponent,
     DataTableComponent,
+    CitiesTableComponent,
     ProgresBarComponent,
     NavBarComponent,
     NavInterfaceComponent,
@@ -42,7 +44,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     AppRoutingModule
   ],
   providers: [
-    { provide: NgChartsConfiguration, useValue: { generateColors: false }}
+    { provide: NgChartsConfiguration, useValue: { generateColors: true }}
   ],
   bootstrap: [AppComponent]
 })

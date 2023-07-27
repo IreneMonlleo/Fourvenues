@@ -18,7 +18,8 @@ export class BarChartComponent {
     scales: {
       x: {},
       y: {
-        min: 10,
+        min: 4,
+        max: 750,
       },
     },
     plugins: {
@@ -26,8 +27,7 @@ export class BarChartComponent {
         display: true,
       },
       datalabels: {
-        anchor: 'end',
-        align: 'end',
+        display: false,
       },
     },
   };
@@ -37,8 +37,8 @@ export class BarChartComponent {
   public barChartData: ChartData<'bar'> = {
     labels: ['23.04', '25.04', '27.04', '29.04', '31.04', '31.04', '02.05' ,'04.05' ,'06.05', '08.05', '10.05', '12.05' , '14.05', '16.05', '18.05', '20.05', '22.05', '24.05', '26.05', '28.05'],
     datasets: [
-      { data: [65, 59, 80, 81, 56, 55, 40,90,65, 59, 80, 81, 56, 55, 40,90,65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-      { data: [28, 48, 40, 19, 86, 27, 90, 65, 59, 80, 81, 56, 55, 40,90,65, 59, 80, 81, 56, 55, 40], label: 'Series B' },
+      { data: [65, 59, 80, 81, 56, 55, 40,90,65, 59, 80, 81, 56, 55, 40,90,65, 59, 80, 81, 56, 55, 40], label: 'Series A', backgroundColor:'#9d57b7'},
+      { data: [28, 48, 40, 19, 86, 27, 90, 65, 59, 80, 81, 56, 55, 40,90,65, 59, 80, 81, 56, 55, 40], label: 'Series B', backgroundColor:'#d7d7d7' },
     ],
   };
 
@@ -77,4 +77,5 @@ export class BarChartComponent {
 
     this.chart?.update();
   }
+  
 }

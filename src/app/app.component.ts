@@ -17,4 +17,6 @@ export class AppComponent {
     { category: "Total Conversions", numberCategory: 250, number: 90.1 },
   ];
 
+
+
 }

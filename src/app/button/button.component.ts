@@ -7,6 +7,8 @@ import { Component,OnInit, Input } from '@angular/core';
 })
 export class ButtonComponent implements OnInit{
   @Input() label!: string;
+  @Input() add:boolean = false;
+  @Input() calendar:boolean = false;
 
   constructor(){}
 
