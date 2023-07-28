@@ -1,6 +1,6 @@
-# Y
+# Fourvenues
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4., Tailwind CSS (https://tailwindcss.com/docs/guides/angular)and ng2-charts (https://valor-software.com/ng2-charts/).
 
 ## Development server
 
